@@ -1,0 +1,38 @@
+<div class="container">
+  <br />
+  <div class="row">
+      <h1 style="color: blueviolet;">
+          Simple Calculator App!
+      </h1>
+  </div>
+  <br />
+  <div class="row">
+      <div class="col-md-6">
+          <input type="number" [(ngModel)]="num1" placeholder="Enter Number 1" class="form-control" />
+      </div> <br>
+      <div class="col-md-6">
+          <input type="number" [(ngModel)]="num2" placeholder="Enter Number 2" class="form-control" />
+      </div>
+  </div>
+  <br />
+  <div class="row text-center">
+      <div class="col-md-12">
+          <button class="btn btn-info" (click)='add()' style="color:black;background-color: burlywood;">Add</button> &nbsp;&nbsp;&nbsp;
+
+          <button class="btn btn-info" (click)='substract()' style="color: black;background-color: chartreuse;">Substract</button> &nbsp;&nbsp;&nbsp;
+
+          <button class="btn btn-info" (click)='multiply()' style="color: black;background-color: cornsilk;">Multiply</button>&nbsp;&nbsp;&nbsp;
+
+          <button class="btn btn-info" (click)='divide()' style="color: black;background: darkgrey;">Divide</button> &nbsp;&nbsp;&nbsp;
+
+          <button class="btn btn-info" (click)='Clear()' style="color: black;background:dodgerblue;">Clear</button>
+      </div>
+      
+  </div>
+  <br />
+  <div class="row">
+      <div class="col-md-5 col-md-offset-4">
+          <h2>Result = {{result}} </h2>
+      </div>
+  </div>
+</div>
